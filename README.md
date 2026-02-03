@@ -61,7 +61,7 @@
 
 <div class="card">
   <div class="emoji">🐻❤️</div>
-  <h2><span id="name">Nirali</span>, will you be my Valentine?</h2>
+  <h2><span id="name">aaani</span>, will you be my Valentine?</h2>
 
   <div class="buttons">
     <button id="yes" onclick="yesClicked()">Yes</button>
