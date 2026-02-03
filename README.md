@@ -58,7 +58,7 @@
       #no {
 background: #ddd;
       position: absolute;
-      left: 140px;
+      left: 120px;
       top: 20;
 }
     }
