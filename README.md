@@ -58,7 +58,7 @@
       #no {
 background: #ddd;
       position: absolute;
-      left: 120px;
+      left: 140px;
       top: 20;
 }
     }
@@ -76,7 +76,7 @@ background: #ddd;
 <div class="box">
   <div class="emoji">🐻❤️</div>
 
-  <h2>aaaanni, will you be my Valentine?</h2>
+  <h2>aaaani, will you be my Valentine?</h2>
 
   <div class="btns">
     <button id="yes" onclick="yesClick()">Yes</button>
