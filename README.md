@@ -89,8 +89,14 @@ background: #ddd;
 <script>
   function moveNo() {
     const noBtn = document.getElementById("no");
-    const x = Math.random() * 220;
-    const y = Math.random() * 80;
+    const container = document.querySelector(".btns");
+
+    const maxX = container.clientWidth - noBtn.offsetWidth;
+    const maxY = container.clientHeight - noBtn.offsetHeight;
+
+    const x = Math.random() * maxX;
+    const y = Math.random() * maxY;
+
     noBtn.style.left = x + "px";
     noBtn.style.top = y + "px";
   }
