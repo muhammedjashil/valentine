@@ -56,10 +56,10 @@
 
     #no {
       #no {
-  background: #ddd;
-  position: absolute;
-  left: 90px;   /* moved left (was 120px) */
-  top: 0;
+background: #ddd;
+      position: absolute;
+      left: 120px;
+      top: 20;
 }
     }
 
