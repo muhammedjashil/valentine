@@ -1,1 +1,103 @@
-valentine 
+ Valentine 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Will You Be My Valentine?</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffd6e8;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .box {
+      background: #fff;
+      width: 340px;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    .emoji {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: 600;
+    }
+
+    .btns {
+      margin-top: 25px;
+      height: 120px;
+      position: relative;
+    }
+
+    button {
+      padding: 14px 28px;
+      border-radius: 30px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    #no {
+      background: #ddd;
+      position: absolute;
+      left: 120px;
+      top: 0;
+    }
+
+    #msg {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #ff4d6d;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+  <div class="emoji">🐻❤️</div>
+
+  <h2>aaaanni, will you be my Valentine?</h2>
+
+  <div class="btns">
+    <button id="yes" onclick="yesClick()">Yes</button>
+    <button id="no" onmouseover="moveNo()">No</button>
+  </div>
+
+  <div id="msg"></div>
+</div>
+
+<script>
+  function moveNo() {
+    const noBtn = document.getElementById("no");
+    const x = Math.random() * 220;
+    const y = Math.random() * 80;
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+  }
+
+  function yesClick() {
+    document.getElementById("msg").innerHTML =
+      "💖 Yay! I knew it 😍";
+  }
+</script>
+
+</body>
+</html>
